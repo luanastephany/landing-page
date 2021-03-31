@@ -1,0 +1,32 @@
+:root{
+    --dark-blue: #1c2431;
+    --dark-main-bg:	#181f2a;
+    --dark-footer-bg: #0b1523;
+    --dark-testimonials: #202a3c;
+    --cyan: #65e2d9;
+    --blue: #339ecc;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    background-color: var(--dark-blue);
+    padding: 70px;
+}
+
+header {
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .breadcrumb p {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
