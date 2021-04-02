@@ -186,26 +186,39 @@ section #texts img{
 /* QUARTA SECTION */
 
 #reconhecimento {
-    height: 620px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 185px;
 }
 
 section #depoimentos {
     display: flex;
     flex-direction: row;
-    height: 200px;
-    width: 1300px;
-    background-color: red;
+    width: 1150px;
     align-items: center;
-    justify-content: center;
-    z-index: 2;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Imagem das aspas */
+section #depoimentos #quote {
+    position: absolute;
+    top: -35px;
+    left: -8px;
+
 }
 
 section #depoimentos .depoimento {
     background-color: var(--dark-testimonials);
-    margin-right: 30px;
+    width: 350px;
+    padding: 44px 26px 20px;
+    border-radius: 4px;
+    z-index: 10;
 }
 
+/* Texto de depoimento da pessoa */
 section #depoimentos .depoimento p {
     color: white;
     font-family: 'Open Sans', 'sans-serif';
@@ -218,13 +231,14 @@ section #depoimentos .depoimento .person {
     flex-direction: row;
 }
 
+/* Avatar da pessoa */
 section #depoimentos .depoimento .person img {
     width: 25px;
     height: 25px;
     border-radius: 50px;
 }
 
-
+/* Nome e ocupação da pessoa */
 section #depoimentos .depoimento .person .info p {
     font-size: 12px;
 }
