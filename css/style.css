@@ -92,18 +92,29 @@ section .intro button {
 /*----------------------------------*/
 
 /*SEGUNDA SECTION */
+#second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 160px;
+    margin-bottom: 80px;
+}
+
 section .squares {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    width: 390px;
+    width: 900px;
     padding: 20px;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
 }
 /*Títulos de cada um */
 section .squares h3 {
     color: white;
     font-family: 'Raleway', 'sans-serif';
-    margin-bottom: 10px;
+    margin: 16px 0;
 }
 
 section .squares p {
@@ -111,44 +122,109 @@ section .squares p {
     font-family: 'Open Sans', 'sans-serif';
     font-weight: 400;
     font-size: 12px;
+    text-align: center;
+    width: 380px;
+}
+
+.squares .beneficios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 /*----------------------------------*/
 /*TERCEIRA SECTION */
+
 section .third-part{
     display: flex;
     flex-direction: row;
+    margin-left: 40px;
 }
 
+/* Imagem que fica no lado esquerdo */
 section .third-part #img-productive {
     width: 615px;
     height: 460px;
 }
 
+/*Textos da parte direita da tela*/
 section #texts {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 570px;
-
 }
 
 section #texts .second-title {
     color: white;
     font-family: 'Raleway', 'sans-serif';
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 section #texts p {
     color: white;
     font-family: 'Open Sans', 'sans-serif';
+    font-size: 13px;
 }
 
+/*Link "See how Fylo works" */
 section #texts a {
     color: var(--cyan);
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 13px;
 }
 
+/*Setinha ao lado do link */
 section #texts img{
     width: 15px;
     height: 15px;
+}
+
+/*----------------------------------*/
+/* QUARTA SECTION */
+
+#reconhecimento {
+    height: 620px;
+    width: 100%;
+}
+
+section #depoimentos {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 1300px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+section #depoimentos .depoimento {
+    background-color: var(--dark-testimonials);
+    margin-right: 30px;
+}
+
+section #depoimentos .depoimento p {
+    color: white;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+section #depoimentos .depoimento .person {
+    display: flex;
+    flex-direction: row;
+}
+
+section #depoimentos .depoimento .person img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+
+section #depoimentos .depoimento .person .info p {
+    font-size: 12px;
 }
