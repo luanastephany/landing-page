@@ -8,6 +8,10 @@
 
 }
 
+body {
+    font-family: 'Open Sans', 'sans serif';
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -55,6 +59,11 @@ section .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 160px;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
 }
 
 section .intro #img-intro {
@@ -69,12 +78,19 @@ section .intro .first-title{
     font-family: 'Raleway', sans-serif;
     margin-top: 40px;
     margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 64px;
 }
 
 section .intro p {
     color: white;
     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
     margin-bottom: 40px;
+    text-align: center;
+    width: 600px;
+    line-height: 28px;
 }
 
 /*Primeiro botão com "Get Started" */
@@ -97,8 +113,8 @@ section .intro button {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 160px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    background-color: var(--dark-main-bg);
 }
 
 section .squares {
@@ -110,21 +126,6 @@ section .squares {
     grid-column-gap: 100px;
     grid-row-gap: 50px;
 }
-/*Títulos de cada um */
-section .squares h3 {
-    color: white;
-    font-family: 'Raleway', 'sans-serif';
-    margin: 16px 0;
-}
-
-section .squares p {
-    color: white;
-    font-family: 'Open Sans', 'sans-serif';
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    width: 380px;
-}
 
 .squares .beneficios {
     display: flex;
@@ -133,8 +134,43 @@ section .squares p {
     align-items: center;
 }
 
+/*As 4 imagens de cada item */
+section .squares img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/*Títulos de cada um */
+section .squares h3 {
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+    margin: 16px 0;
+}
+
+/* Textos de cada item*/
+section .squares p {
+    color: white;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    width: 340px;
+}
+
+
+
 /*----------------------------------*/
 /*TERCEIRA SECTION */
+
+#productive {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-main-bg);
+
+}
 
 section .third-part{
     display: flex;
@@ -191,6 +227,8 @@ section #texts img{
     flex-direction: column;
     align-items: center;
     padding-top: 185px;
+    background-color: var(--dark-main-bg);
+    padding-bottom: 350px;
 }
 
 section #depoimentos {
@@ -219,26 +257,113 @@ section #depoimentos .depoimento {
 }
 
 /* Texto de depoimento da pessoa */
-section #depoimentos .depoimento p {
+section #depoimentos .depoimento > p {
     color: white;
     font-family: 'Open Sans', 'sans-serif';
     font-weight: 400;
     font-size: 14px;
+    opacity: 0.6;
+    line-height: 20px;
 }
 
 section #depoimentos .depoimento .person {
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
+    align-items: center;
 }
 
 /* Avatar da pessoa */
 section #depoimentos .depoimento .person img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 8px;
 }
 
 /* Nome e ocupação da pessoa */
-section #depoimentos .depoimento .person .info p {
+section #depoimentos .depoimento .person .info .name {
     font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+section #depoimentos .depoimento .person .info .role {
+    font-size: 10px;
+    line-height: 10px;
+    color: white;
+    opacity: 0.5;
+    margin-top: 8px;
+}
+
+
+/*----------------------------------*/
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+/*FOOTER*/
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 510px;
+    background-color: var(--dark-footer-bg);
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    color: white;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    width: 1250px;
+}
+
+footer .content .row {
+    display: flex;
+}
+
+footer .content .row .location {
+
+}
+
+footer .content .row .contacts {
+
+}
+
+footer .content .row .contact {
+
+}
+
+footer .content .row .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 240px;
+    grid-column-gap: 60pxpx;
+    grid-row-gap: 24px;
+}
+
+footer .social {
+    display: flex;
+    gap: 12px;
+    margin-left: 100px;
+}
+
+footer .content .row .social button {
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
